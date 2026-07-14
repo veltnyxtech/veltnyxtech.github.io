@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us - Veltnyx Tech</title>
+    <meta name="description" content="Learn more about Veltnyx Tech, our mission, and the team behind our AI solutions for student researchers.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://testserver/about/">
+    <meta property="og:title" content="About Us - Veltnyx Tech">
+    <meta property="og:description" content="Learn more about Veltnyx Tech, our mission, and the team behind our AI solutions for student researchers.">
+    <meta property="og:image" content="/static/seo_banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://testserver/about/">
+    <meta property="twitter:title" content="About Us - Veltnyx Tech">
+    <meta property="twitter:description" content="Learn more about Veltnyx Tech, our mission, and the team behind our AI solutions for student researchers.">
+    <meta property="twitter:image" content="/static/seo_banner.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css?v=2">
+    <script>
+        // Check local storage or system preference to set initial theme on document element
+        if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.add('light-theme');
+        } else {
+            document.documentElement.classList.remove('light-theme');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 1rem; color: var(--text-main); text-decoration: none;">
+                <img src="/static/placeholder_logo.png" alt="Veltnyx Tech Logo" id="brand-logo">
+                <span>Veltnyx Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="/#home">Home</a>
+            <a href="/about/">About</a>
+            <a href="/#services">Services</a>
+            <a href="/blog/">Blog</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <svg id="theme-toggle-dark-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    
+<main style="padding-top: 100px;">
+    <section class="about-page">
+        <div class="container">
+            <h1 class="glow-text" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">About <span
+                    class="highlight">Veltnyx Tech</span></h1>
+
+            <div class="about-text" style="max-width: 1000px; padding: 3rem; text-align: left;">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-primary); text-align: left;">
+                    Our Mission</h2>
+                <p style="text-align: left; margin-bottom: 2.5rem; font-size: 1.15rem;">
+                    At Veltnyx Tech, our mission is to empower student researchers by turning their theoretical
+                    ideas into practical, scalable AI solutions. We believe that groundbreaking research shouldn't
+                    remain confined to academic papers. By providing expert engineering, model optimization, and
+                    deployment services, we bridge the gap between academia and real-world application.
+                </p>
+
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-primary); text-align: left;">
+                    What We Do</h2>
+                <p style="text-align: left; margin-bottom: 2.5rem; font-size: 1.15rem;">
+                    We specialize in Machine Learning and Deep Learning architectures. Our team works closely with
+                    researchers to understand their unique datasets and objectives. Whether it's fine-tuning large
+                    language models, developing robust computer vision systems, or building efficient data
+                    pipelines, we bring the technical horsepower needed to bring your vision to life.
+                </p>
+
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-primary); text-align: left;">
+                    Our Team</h2>
+                <p style="text-align: left; margin-bottom: 2rem; font-size: 1.15rem;">
+                    Veltnyx Tech is driven by a passionate team of AI engineers, data scientists, and developers.
+                    We combine academic rigor with industry best practices to deliver high-quality, production-ready
+                    solutions.
+                </p>
+
+                <div class="team-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="team-member"
+                        style="background: rgba(13, 6, 20, 0.5); padding: 2.5rem 2rem; border-radius: 15px; border: 1px solid rgba(175, 77, 255, 0.2); text-align: center; transition: all 0.3s ease;">
+                        <div
+                            style="width: 120px; height: 120px; border-radius: 50%; background: #2a164a; margin: 0 auto 1.5rem; border: 2px solid var(--accent-primary); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <span style="font-size: 3rem; color: var(--accent-primary);">👨‍💻</span>
+                        </div>
+                        <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">Founder Name</h3>
+                        <p
+                            style="color: var(--accent-primary); font-size: 0.95rem; margin-bottom: 1rem; font-weight: 600;">
+                            Lead AI Engineer</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;">Passionate about
+                            transforming research into scalable, high-impact products.</p>
+                    </div>
+                    <div class="team-member"
+                        style="background: rgba(13, 6, 20, 0.5); padding: 2.5rem 2rem; border-radius: 15px; border: 1px solid rgba(175, 77, 255, 0.2); text-align: center; transition: all 0.3s ease;">
+                        <div
+                            style="width: 120px; height: 120px; border-radius: 50%; background: #2a164a; margin: 0 auto 1.5rem; border: 2px solid var(--accent-primary); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <span style="font-size: 3rem; color: var(--accent-primary);">👩‍🔬</span>
+                        </div>
+                        <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">Member Name</h3>
+                        <p
+                            style="color: var(--accent-primary); font-size: 0.95rem; margin-bottom: 1rem; font-weight: 600;">
+                            Data Scientist</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;">Specialist in
+                            model optimization, statistical analysis, and robust data pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Veltnyx Tech</h3>
+                <p>Building the future of student AI.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Quick Links</h4>
+                <a href="/#home">Home</a>
+                <a href="/about/">About Us</a>
+                <a href="/#services">Our Capabilities</a>
+                <a href="/blog/">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Connect With Us</h4>
+                <a href="mailto:veltnyxlabs@gmail.com">veltnyxlabs@gmail.com</a>
+                <a href="https://instagram.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">IG: @veltnyx.tech</a>
+                <a href="https://facebook.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">FB: @veltnyx.tech</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Veltnyx Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js?v=2"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Veltnyx Tech - Turn Your Research into AI Solutions</title>
+    <meta name="description" content="Veltnyx Tech is a premier Machine Learning & Deep Learning studio helping students turn academic research into fully functional, deployment-ready AI solutions.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://testserver/">
+    <meta property="og:title" content="Veltnyx Tech - Turn Your Research into AI Solutions">
+    <meta property="og:description" content="Veltnyx Tech is a premier Machine Learning & Deep Learning studio helping students turn academic research into fully functional, deployment-ready AI solutions.">
+    <meta property="og:image" content="/static/seo_banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://testserver/">
+    <meta property="twitter:title" content="Veltnyx Tech - Turn Your Research into AI Solutions">
+    <meta property="twitter:description" content="Veltnyx Tech is a premier Machine Learning & Deep Learning studio helping students turn academic research into fully functional, deployment-ready AI solutions.">
+    <meta property="twitter:image" content="/static/seo_banner.png">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css?v=2">
+    <script>
+        // Check local storage or system preference to set initial theme on document element
+        if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.add('light-theme');
+        } else {
+            document.documentElement.classList.remove('light-theme');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 1rem; color: var(--text-main); text-decoration: none;">
+                <img src="/static/placeholder_logo.png" alt="Veltnyx Tech Logo" id="brand-logo">
+                <span>Veltnyx Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="/#home">Home</a>
+            <a href="/about/">About</a>
+            <a href="/#services">Services</a>
+            <a href="/blog/">Blog</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <svg id="theme-toggle-dark-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="glow-text">Turn Your Research Into <span class="highlight">AI Reality</span></h1>
+            <p>The premier Machine Learning & Deep Learning studio built exclusively for students. Transform your
+                theoretical ideas into fully functional, deployment-ready AI solutions.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-secondary">Pitch Your Idea</a>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <!-- Abstract floating elements for ML vibe -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Empowering Student Researchers</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>At Veltnyx Tech, we bridge the gap between academic research and real-world application. We
+                        help students implement complex architectures, optimize model performance, and deploy
+                        scalable AI solutions, turning academic papers into production-ready products.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="/about/" class="btn btn-outline">Read More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Studio Capabilities</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Model Training & Tuning</h3>
+                    <p>From Machine Learning models to complex Neural Networks to Transformers, we
+                        train and fine-tune models
+                        tailored exclusively to your research datasets.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Data Engineering</h3>
+                    <p>Robust preprocessing pipelines, data augmentation, and structured storage schemas for clean,
+                        reliable model inputs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>MVP Deployment</h3>
+                    <p>Deploy your trained AI models as accessible REST APIs or full-stack web applications for easy
+                        demonstration and pitching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Veltnyx Tech</h3>
+                <p>Building the future of student AI.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Quick Links</h4>
+                <a href="/#home">Home</a>
+                <a href="/about/">About Us</a>
+                <a href="/#services">Our Capabilities</a>
+                <a href="/blog/">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Connect With Us</h4>
+                <a href="mailto:veltnyxlabs@gmail.com">veltnyxlabs@gmail.com</a>
+                <a href="https://instagram.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">IG: @veltnyx.tech</a>
+                <a href="https://facebook.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">FB: @veltnyx.tech</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Veltnyx Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js?v=2"></script>
+    
+</body>
+
+</html>

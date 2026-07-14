@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog - Veltnyx Tech</title>
+    <meta name="description" content="Read the latest insights, research discussions, and AI engineering updates from the Veltnyx Tech team.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://testserver/blog/">
+    <meta property="og:title" content="Blog - Veltnyx Tech">
+    <meta property="og:description" content="Read the latest insights, research discussions, and AI engineering updates from the Veltnyx Tech team.">
+    <meta property="og:image" content="/static/seo_banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://testserver/blog/">
+    <meta property="twitter:title" content="Blog - Veltnyx Tech">
+    <meta property="twitter:description" content="Read the latest insights, research discussions, and AI engineering updates from the Veltnyx Tech team.">
+    <meta property="twitter:image" content="/static/seo_banner.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css?v=2">
+    <script>
+        // Check local storage or system preference to set initial theme on document element
+        if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.add('light-theme');
+        } else {
+            document.documentElement.classList.remove('light-theme');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 1rem; color: var(--text-main); text-decoration: none;">
+                <img src="/static/placeholder_logo.png" alt="Veltnyx Tech Logo" id="brand-logo">
+                <span>Veltnyx Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="/#home">Home</a>
+            <a href="/about/">About</a>
+            <a href="/#services">Services</a>
+            <a href="/blog/">Blog</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <svg id="theme-toggle-dark-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    
+<main style="padding-top: 100px;">
+    <section class="blog-page">
+        <div class="container">
+            <h1 class="glow-text" style="text-align: center; font-size: 3.5rem; margin-bottom: 2rem;">Insights &
+                <span class="highlight">Updates</span>
+            </h1>
+            <p style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Dive into our latest thoughts on AI architectures, deployment strategies, and our experiences
+                bridging the gap between research and reality.
+            </p>
+
+            <!-- Featured Blogs Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-inner" id="blog-carousel">
+                    
+                    <div class="carousel-item">
+                        <div class="carousel-item-image">🌟</div>
+                        <div class="carousel-item-content">
+                            <p class="carousel-meta">Featured • April 24, 2026</p>
+                            <h2>The Future of AI in Academic Research</h2>
+                            <p>Discover how autonomous agents and advanced LLMs are fundamentally shifting the way academic research is conducted, analyzed, and published.</p>
+                            <div style="margin-top: auto;">
+                                <a href="/blog/future-ai-academic-research/" class="btn btn-primary">Read Full Post</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="carousel-item-image">⚙️</div>
+                        <div class="carousel-item-content">
+                            <p class="carousel-meta">Engineering • April 18, 2026</p>
+                            <h2>Optimizing Transformer Models</h2>
+                            <p>A deep dive into techniques for reducing memory overhead and inference latency when running large transformer models on consumer hardware.</p>
+                            <div style="margin-top: auto;">
+                                <a href="/blog/optimizing-transformer-models/" class="btn btn-primary">Read Full Post</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="carousel-control prev" id="carousel-prev">❮</div>
+                <div class="carousel-control next" id="carousel-next">❯</div>
+                <div class="carousel-indicators" id="carousel-indicators">
+                    
+                    <div class="indicator active" data-slide="0"></div>
+                    
+                    <div class="indicator " data-slide="1"></div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- Latest Blogs Grid -->
+            <h2 style="font-size: 2.2rem; margin: 4rem 0 2rem; color: var(--text-main); text-align: left;">Latest News</h2>
+            <div class="blog-grid">
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">📝</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">July 14, 2026 • 5 min read</p>
+                        <h3>What are API&#x27;s</h3>
+                        <p class="blog-excerpt">
+                            Understanding APIs is a foundational level concept needed for communication between two independent pieces of software
+                        </p>
+                        <a href="/blog/what-are-apis/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">🚀</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">July 14, 2026 • 5 min read</p>
+                        <h3>Data Cleaning</h3>
+                        <p class="blog-excerpt">
+                            Data cleaning rarely feels like the most intellectually exciting part of a project, and it&#x27;s tempting to treat it as a box to check quickly before moving on to modeling or analysis.
+                        </p>
+                        <a href="/blog/data-cleaning/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">🌟</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">April 24, 2026 • 5 min read</p>
+                        <h3>The Future of AI in Academic Research</h3>
+                        <p class="blog-excerpt">
+                            Discover how autonomous agents and advanced LLMs are fundamentally shifting the way academic research is conducted, analyzed, and published.
+                        </p>
+                        <a href="/blog/future-ai-academic-research/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">🚀</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">April 24, 2026 • 5 min read</p>
+                        <h3>Deploying LLMs on a Student Budget</h3>
+                        <p class="blog-excerpt">
+                            We explore practical strategies for taking fine-tuned Large Language Models from the lab to production without breaking the bank. From quantization to serverless architectures, here is how we do it at Veltnyx Tech.
+                        </p>
+                        <a href="/blog/deploying-llms-student-budget/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">⚙️</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">April 18, 2026 • 6 min read</p>
+                        <h3>Optimizing Transformer Models</h3>
+                        <p class="blog-excerpt">
+                            A deep dive into techniques for reducing memory overhead and inference latency when running large transformer models on consumer hardware.
+                        </p>
+                        <a href="/blog/optimizing-transformer-models/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">🧠</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">April 15, 2026 • 4 min read</p>
+                        <h3>Bridging PyTorch to React</h3>
+                        <p class="blog-excerpt">
+                            A technical deep dive into building robust REST APIs with FastAPI to serve PyTorch models directly to modern React frontends. We share our boilerplate setup and best practices.
+                        </p>
+                        <a href="/blog/bridging-pytorch-react/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <span style="font-size: 3rem;">📊</span>
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-meta">April 02, 2026 • 7 min read</p>
+                        <h3>Data Engineering for Computer Vision</h3>
+                        <p class="blog-excerpt">
+                            Clean data is the lifeblood of any ML project. Learn how we set up scalable data pipelines and augmentation strategies for complex computer vision research projects.
+                        </p>
+                        <a href="/blog/data-engineering-computer-vision/" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: auto;">Read Full Post</a>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Veltnyx Tech</h3>
+                <p>Building the future of student AI.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Quick Links</h4>
+                <a href="/#home">Home</a>
+                <a href="/about/">About Us</a>
+                <a href="/#services">Our Capabilities</a>
+                <a href="/blog/">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Connect With Us</h4>
+                <a href="mailto:veltnyxlabs@gmail.com">veltnyxlabs@gmail.com</a>
+                <a href="https://instagram.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">IG: @veltnyx.tech</a>
+                <a href="https://facebook.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">FB: @veltnyx.tech</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Veltnyx Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js?v=2"></script>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carouselInner = document.getElementById('blog-carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.getElementById('carousel-prev');
+        const nextBtn = document.getElementById('carousel-next');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        if (!carouselInner || items.length <= 1) return;
+        
+        let currentIndex = 0;
+        const totalItems = items.length;
+        
+        function updateCarousel() {
+            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+            indicators.forEach((ind, index) => {
+                if (index === currentIndex) {
+                    ind.classList.add('active');
+                } else {
+                    ind.classList.remove('active');
+                }
+            });
+        }
+        
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+            });
+        }
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                updateCarousel();
+            });
+        }
+        
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', (e) => {
+                currentIndex = parseInt(e.target.getAttribute('data-slide'));
+                updateCarousel();
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

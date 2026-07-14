@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>What are API&#x27;s - Veltnyx Tech</title>
+    <meta name="description" content="Understanding APIs is a foundational level concept needed for communication between two independent pieces of software">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://testserver/blog/what-are-apis/">
+    <meta property="og:title" content="What are API&#x27;s - Veltnyx Tech">
+    <meta property="og:description" content="Understanding APIs is a foundational level concept needed for communication between two independent pieces of software">
+    <meta property="og:image" content="/static/seo_banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://testserver/blog/what-are-apis/">
+    <meta property="twitter:title" content="What are API&#x27;s - Veltnyx Tech">
+    <meta property="twitter:description" content="Understanding APIs is a foundational level concept needed for communication between two independent pieces of software">
+    <meta property="twitter:image" content="/static/seo_banner.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css?v=2">
+    <script>
+        // Check local storage or system preference to set initial theme on document element
+        if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.add('light-theme');
+        } else {
+            document.documentElement.classList.remove('light-theme');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 1rem; color: var(--text-main); text-decoration: none;">
+                <img src="/static/placeholder_logo.png" alt="Veltnyx Tech Logo" id="brand-logo">
+                <span>Veltnyx Tech</span>
+            </a>
+        </div>
+        <nav>
+            <a href="/#home">Home</a>
+            <a href="/about/">About</a>
+            <a href="/#services">Services</a>
+            <a href="/blog/">Blog</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <svg id="theme-toggle-dark-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="theme-icon hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.46 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    
+<main style="padding-top: 120px; padding-bottom: 5rem;">
+    <article class="container">
+        <div style="margin-bottom: 2rem;">
+            <a href="/blog/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 1.1rem; hover: underline;">
+                ❮ Back to Insights
+            </a>
+        </div>
+
+        <header class="post-header">
+            <p class="post-meta">
+                Engineering • July 14, 2026 • 5 min read
+            </p>
+            <h1 class="post-title glow-text highlight">What are API&#x27;s</h1>
+        </header>
+
+        <div class="post-hero-image">
+            <span>📝</span>
+        </div>
+
+        <section class="post-content">
+            <p>An API, or Application Programming Interface, is one of the most fundamental concepts in modern software — and also one of the most commonly misunderstood by people just starting out. At its core, an API is simply a defined way for two pieces of software to communicate with each other, without either one needing to know the internal details of how the other actually works. It is a contract: a set of rules describing what requests are allowed, what data they should contain, and what response to expect back.</p>
+
+<p>The word "interface" is doing the important work in the name. Just as a car's steering wheel and pedals form an interface that lets a driver control the vehicle without understanding its engine, an API forms an interface that lets a program interact with another program — a service, a library, an operating system — without needing to understand its internal implementation.</p>
+
+<h2>A Simple Analogy</h2>
+
+<p>The most common analogy, and a genuinely useful one, is a restaurant. A customer (the client) doesn't walk into the kitchen to cook their own meal. Instead, they look at a menu (the API's available endpoints), place an order with a waiter (send a request), and the kitchen (the server) prepares the food and the waiter brings it back (the response). The customer never needs to know how the kitchen is organized, what equipment it uses, or how the chef prepares the dish — they only need to know what's on the menu and how to order from it.</p>
+
+<p>This is exactly how software APIs work. A weather app on a phone doesn't have its own network of meteorological sensors. Instead, it sends a request to a weather service's API — typically specifying a location — and receives back structured data describing the current conditions, which the app then displays in its own interface.</p>
+
+<h2>Types of APIs</h2>
+
+<ul>
+    <li><strong>Web APIs (REST, GraphQL):</strong> The most common type encountered in everyday software development, allowing applications to communicate over the internet using standard protocols like HTTP. REST APIs organize functionality around resources (like /users or /orders), while GraphQL APIs let a client specify exactly what data it needs in a single flexible query.</li>
+    <li><strong>Library and framework APIs:</strong> The set of functions, classes, and methods a programming library exposes for other code to use. When a developer calls a function from a library like NumPy or React, they're using that library's API — a defined set of tools without needing to understand the library's internal source code.</li>
+    <li><strong>Operating system APIs:</strong> Interfaces that let applications request services from the underlying operating system, such as reading a file, allocating memory, or accessing hardware like a camera or microphone.</li>
+    <li><strong>Hardware APIs:</strong> Interfaces that let software communicate with physical hardware components, abstracting away the low-level details of how a specific chip or device actually operates.</li>
+</ul>
+
+<h2>How a Web API Request Actually Works</h2>
+
+<p>Since web APIs are the type most people encounter day-to-day — whether integrating a payment provider, pulling weather data, or connecting to a social media platform — it's worth walking through what actually happens during a typical request.</p>
+
+<p>A client sends an HTTP request to a specific endpoint (a URL), specifying a method that describes the intended action: GET to retrieve data, POST to create something new, PUT or PATCH to update existing data, and DELETE to remove it. The request often includes headers (metadata like authentication tokens or content format) and, for POST or PUT requests, a body containing the actual data being sent, typically formatted as JSON.</p>
+
+<p>The server receives this request, processes it — which might involve querying a database, running some business logic, or calling yet another API internally — and sends back a response. This response includes a status code indicating what happened (200 for success, 404 if the requested resource wasn't found, 500 if the server encountered an error, among many others), along with a response body containing the requested data or an explanation of what went wrong.</p>
+
+<h2>Why APIs Matter So Much</h2>
+
+<p>APIs are what make the modern software ecosystem possible. Without them, every application would need to build every piece of functionality itself from scratch — its own maps, its own payment processing, its own authentication system. Instead, a developer building a delivery app can use a mapping API for directions, a payments API for processing transactions, and an SMS API for sending order notifications, focusing their own effort on what makes their specific product unique rather than reinventing infrastructure that already exists and works well.</p>
+
+<p>This same principle applies to internal software architecture as well. Large applications are often broken into smaller services that communicate through internal APIs, allowing different teams to build, update, and scale different parts of a system independently, as long as they all respect the agreed-upon API contract between them.</p>
+
+<h2>Common Points of Confusion</h2>
+
+<p>A few distinctions are worth clarifying for anyone new to the concept. An API is not the same thing as the internet, though web APIs do run over the same HTTP protocol used to load web pages — an API is the structured, machine-readable counterpart to a human browsing a website. An API is also not the same as an SDK (Software Development Kit); an SDK is a broader toolkit that often includes code, documentation, and helper libraries designed to make using a particular API easier, but the API itself is the underlying contract, while the SDK is one convenient way of interacting with it.</p>
+
+<p>Understanding APIs at this foundational level — as a defined contract for communication between two independent pieces of software — makes it much easier to reason about everything built on top of that concept, from simple weather widgets to the complex, interconnected services that power most modern applications.</p>
+        </section>
+
+        <div style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(175, 77, 255, 0.15); text-align: center;">
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Thanks for reading! Keep exploring our research and updates.</p>
+            <a href="/blog/" class="btn btn-outline">Explore More Posts</a>
+        </div>
+    </article>
+</main>
+
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Veltnyx Tech</h3>
+                <p>Building the future of student AI.</p>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Quick Links</h4>
+                <a href="/#home">Home</a>
+                <a href="/about/">About Us</a>
+                <a href="/#services">Our Capabilities</a>
+                <a href="/blog/">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4 style="color: var(--accent-primary); margin-bottom: 0.2rem;">Connect With Us</h4>
+                <a href="mailto:veltnyxlabs@gmail.com">veltnyxlabs@gmail.com</a>
+                <a href="https://instagram.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">IG: @veltnyx.tech</a>
+                <a href="https://facebook.com/veltnyx.tech" target="_blank" rel="noopener noreferrer">FB: @veltnyx.tech</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Veltnyx Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js?v=2"></script>
+    
+</body>
+
+</html>
